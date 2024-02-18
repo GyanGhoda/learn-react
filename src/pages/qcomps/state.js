@@ -10,6 +10,11 @@ export default function Gallery() {
   }
 
   function handleMoreClick() {
+    if (index < sculptureList.length - 1) {
+      setIndex(index + 1);
+    } else {
+      setIndex(0);
+    }
     setShowMore(!showMore);
   }
 
